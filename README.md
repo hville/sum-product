@@ -1,4 +1,4 @@
-# normal-z
+# sum-product
 
 1. [Introduction](#introduction)
 1. [Installation](#installation)
@@ -9,23 +9,21 @@
 
 ## Introduction
 
-Simple and small standalone random number generator for **Z**, the **standard normal distribution** with an average of 0 and a variance of 1 (*μ=0, σ=1*).
-The random number generator uses the [Marsaglia polar method](http://en.wikipedia.org/wiki/Normal_distribution#Generating_values_from_normal_distribution).
-The additional independent random sample is cashed for the next call.
-
+Simple and small standalone function to calculate the sum of the product of items in the parameters
+`sumProduct([0,1], [2,3], [4,5]) //  0*2*4 + 1*3*5 = 15`
 
 ## Installation
 
-In node, from the root of your project folder type `npm install --save random-z`.
+In node, from the root of your project folder type `npm install --save sum-product`.
 
 
 ## Usage
 
-The function takes no parameters and returns a random number.
+The function takes any number of arrays.
 
 ```
-	var randomZ = require('random-z')
-	var newRandomSample = randomZ()
+	var sumProduct = require('sum-product')
+	var result = sumProduct([0,1], [2,3], [4,5]) //  0*2*4 + 1*3*5 = 15
 ```
 
 
