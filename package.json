@@ -1,7 +1,7 @@
 {
   "name": "sum-product",
-  "version": "0.0.1",
-  "description": "classic spreadsheet sum or array item products",
+  "version": "0.0.2",
+  "description": "classic spreadsheet sum of array item products",
   "author": "Hugo Villeneuve",
   "license": "MIT",
   "keywords": [
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/hville/sum-product.git"
   },
-  "main": "./src/index.js",
+  "main": "./index.js",
   "dependencies": {},
   "devDependencies": {
     "tape": "4.2.0"
