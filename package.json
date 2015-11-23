@@ -1,6 +1,6 @@
 {
   "name": "sum-product",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "classic spreadsheet sum of array item products",
   "author": "Hugo Villeneuve",
   "license": "MIT",
@@ -19,7 +19,8 @@
   "main": "./index.js",
   "dependencies": {},
   "devDependencies": {
-    "tape": "4.2.0"
+    "tt": "1.0.3",
+    "untap": "0.0.4"
   },
   "engines": {
     "node": ">= 0.10.0",
@@ -29,6 +30,6 @@
     "src/"
   ],
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js | untap"
   }
 }
