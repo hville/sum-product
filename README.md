@@ -3,7 +3,7 @@
 • [Usage](#usage) • [Test](#test) • [License](#license) •
 
 Simple and small standalone function to calculate the sum of the product of array items.
-`sumProduct([0,1], [2,3], [4,5]) //  0*2*4 + 1*3*5 = 15`
+`sumProduct([0,1], [2,3], [4,5]) // 0*2*4 + 1*3*5 = 15`
 
 Uses a modified Kahan sum to reduce floating point errors.
 
