@@ -1,35 +1,30 @@
 {
-  "name": "sum-product",
-  "version": "0.0.3",
-  "description": "classic spreadsheet sum of array item products",
-  "author": "Hugo Villeneuve",
-  "license": "MIT",
-  "keywords": [
-    "spreadsheet",
-    "array",
-    "statistics",
-    "sum",
-    "product",
-    "sumproduct"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hville/sum-product.git"
-  },
-  "main": "./index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "tt": "1.0.3",
-    "untap": "0.0.4"
-  },
-  "engines": {
-    "node": ">= 0.10.0",
-    "npm": "2.x"
-  },
-  "files": [
-    "src/"
-  ],
-  "scripts": {
-    "test": "node test.js | untap"
-  }
+	"name": "sum-product",
+	"version": "1.0.0",
+	"description": "classic spreadsheet sum of array item products",
+	"author": "Hugo Villeneuve",
+	"license": "MIT",
+	"keywords": [
+		"spreadsheet",
+		"array",
+		"statistics",
+		"sum",
+		"product",
+		"sumproduct"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hville/sum-product.git"
+	},
+	"main": "./index.js",
+	"dependencies": {},
+	"devDependencies": {
+		"cotest": "^1.0.1"
+	},
+	"scripts": {
+		"test": "node test.js"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	}
 }
