@@ -1,40 +1,23 @@
 # sum-product
 
-1. [Introduction](#introduction)
-1. [Installation](#installation)
-1. [Usage](#usage)
-1. [Test](#test)
-1. [License](#license)
-
-
-## Introduction
+• [Usage](#usage) • [Test](#test) • [License](#license) •
 
 Simple and small standalone function to calculate the sum of the product of array items.
 `sumProduct([0,1], [2,3], [4,5]) //  0*2*4 + 1*3*5 = 15`
 
-## Installation
-
-In node, from the root of your project folder type `npm install --save sum-product`.
-
+Uses a modified Kahan sum to reduce floating point errors.
 
 ## Usage
 
 The function takes any number of arrays.
 
+```javascript
+var sumProduct = require('sum-product')
+var result = sumProduct([0,1], [2,3], [4,5]) //  0*2*4 + 1*3*5 = 15
+result = sumProduct() //  ==>0
+result = sumProduct([]) //  ==>0
+result = sumProduct([a]) //  ==>NaN
 ```
-	var sumProduct = require('sum-product')
-	var result = sumProduct([0,1], [2,3], [4,5]) //  0*2*4 + 1*3*5 = 15
-	result = sumProduct() //  ==>0
-	result = sumProduct([]) //  ==>0
-	result = sumProduct([a]) //  ==>NaN
-```
-
-
-
-## Test
-
-In node, from the root of your project folder type `npm test`.
-
 
 ## License
 
